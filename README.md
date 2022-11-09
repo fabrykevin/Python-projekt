@@ -10,3 +10,4 @@
 - Pénztárcához mérten is megkeresheti az álom cipőjét.(Ha a felhasználónak van egy bizonyos költési limitje akkor annál csak kevesebb pénzért tud vásárolni) 
 - Ha elfogyott a készletről az adott típus akkor kiveszi a listából.
 - A felhasználóknak kötelező a regisztráció ha cipőt szeretnének választani ha a user már rendelkezik saját fiókkal akkor benne van  a nevek.csv-be más esetben belekerül az új név. 
+- 
