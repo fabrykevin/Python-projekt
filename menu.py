@@ -1,14 +1,13 @@
 
 def menu():
     option=-1
-    while option< 0 or option>5:
-        print('------------')
+    while option< 0 or option>4:
+        print('---------------------')
         print('0 - Regisztráció') 
-        print('1 - ')
-        print('2 - ')
-        print('3 - ')
-        print('4 - ')
-        print('5 - Legújabb cipő és a legrégebbi cipő ')
-        print('------------')
+        print('1 - Az összes cipő megmutatása')
+        print('2 - A Kedvenc cipő megkeresése ')
+        print('3 - A legdrágább és a legolcsóbb cipők megmutatása ')
+        print('4 - Legújabb és a legrégebbi cipők megmutatása ')
+        print('---------------------')
         option=int(input('Válasszon a lehetőségek közül :'))
     return option
