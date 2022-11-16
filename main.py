@@ -1,5 +1,18 @@
 from menu import *
-from fuggvenyek import showall, readFile, search
+from fuggvenyek import showall, readFile, search, bejelentkezes
+
+
+email=input('Adja me az e-mail címet: ')
+password=input('Adja meg a jelszót')
+megerosit=input('Jelszó megerősítés')
+if megerosit==password:
+    bejelentkezes(email, password)
+    print('Sikeres regisztráció')
+    print('A jel')
+
+
+
+
 
 readFile()
 choice=-1
@@ -8,7 +21,7 @@ while choice != 0:
     if choice == 1:
         showall()
     elif choice == 2:
-        cipok=input('Kérem a cipőt')
+        cipok=input('Kérem a cipőt: ')
         result=search(cipok)
         if len(result)==0:
             print('Nincs ilyen cipő.')

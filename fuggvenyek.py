@@ -13,3 +13,8 @@ def registration(startNumber):
             return nameList[6]
     return False
 
+
+
+def    bejelentkezes
+
+
