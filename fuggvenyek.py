@@ -9,4 +9,4 @@ def registration(startNumber):
 
 def searchBrand(márka):
     file = open('Sneaker.csv', 'r', encoding='utf-8')
-    
+    splittedData = file
