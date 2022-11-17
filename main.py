@@ -8,8 +8,9 @@ megerosit=input('Jelszó megerősítés')
 if megerosit==password:
     bejelentkezes(email, password)
     print('Sikeres regisztráció')
-    print('A jel')
-
+    print('A jelszó megerősítése')
+else:
+    print('A jelszó nem egyezik! \n')
 
 
 
