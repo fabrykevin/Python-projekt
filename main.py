@@ -1,6 +1,7 @@
 from menu import *
 from fuggvenyek import showall, readFile, search, bejelentkezes
 
+print('Üdvözöljük a sneaker szimulátorban. Csak gépelje be keresett cipőjét és a szimulátor már meg is mutatja.')
 
 email=input('Adja me az e-mail címet: ')
 password=input('Adja meg a jelszót')
