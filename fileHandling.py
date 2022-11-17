@@ -19,5 +19,10 @@ def loadData():
         snkr.Year = splitted[7]
         
         Sneakers.append(snkr)
+        
         return Sneakers
 
+def extendList(snkr):
+    file = open('Sneaker.csv', 'a', encoding='utf-8')
+    file.write(f'{snkr.Code};{snkr.Brand};{snkr.Type};{snkr.Colour};{snkr.Size};{snkr.Sex};{snkr.Price};{snkr.year}')
+    file.close()

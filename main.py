@@ -1,17 +1,29 @@
-from menu import *
-from fuggvenyek import showall, readFile, search, bejelentkezes
+from regisztracio import signup, login
+from menu import*
+from fuggvenyek import *
+Nevek=[]
 
-print('Üdvözöljük a sneaker szimulátorban. Csak gépelje be keresett cipőjét és a szimulátor már meg is mutatja.')
+def regisztracio():
+    email=input('Adja me az e-mail címet: ')
+    password=input('Adja meg a jelszót')
+    megerosit=input('Jelszó megerősítés')
+    if megerosit == password:
+        signup(email, password)
+        print('Sikeres regisztráció')
+    
+    else:
+        print('A jelszó nem egyezik! \n')
 
-email=input('Adja me az e-mail címet: ')
-password=input('Adja meg a jelszót')
-megerosit=input('Jelszó megerősítés')
-if megerosit==password:
-    bejelentkezes(email, password)
-    print('Sikeres regisztráció')
-    print('A jelszó megerősítése')
-else:
-    print('A jelszó nem egyezik! \n')
+def bejelentkezesek():
+    email=input('Kérem az e-mail címet: ')
+    password=input('Kérem a jelszót')
+    
+    login(email, password)
+    for row in Nevek:
+        splittedData=row.split(';')
+    
+    if email==splittedData[0] and password==splittedData[1]:
+        print('Sikeres bejelentkezés!')       
 
 
 
@@ -30,7 +42,7 @@ while choice != 0:
         else:
             for item in result:
                 print(f'\t{item}')
-    elif choice == 3:
-        legolcsobb(), legdrágább() 
-    elif choice == 4:
-        Legújabb() , legrégebbi()
+    #elif choice == 3:
+    #    legolcsobb(), legdrágább() 
+    #elif choice == 4:
+     #   Legújabb() , legrégebbi()
