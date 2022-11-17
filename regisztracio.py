@@ -1,24 +1,24 @@
 from main import *
-Nevek=[]
+neveklist=[]
 
 
 def signup(email, password):
-    file=open('nevek.csv', 'r', encoding='utf-8')
+    file=open('nevek.csv', 'r+', encoding='utf-8')
 
     for row in file:
-        Nevek.append(row.strip())
+        neveklist.append(row.strip())
     
     file.write(email + ';')
     file.write(password +  ';' )
     
     file.close()
 
-def login(email, password):
+def login (email, pwd):
     file=open('nevek.csv', 'r', encoding='utf-8')
 
 
     for row in file:
-        Nevek.append(row.strip())
+        neveklist.append(row.strip())
 
     file.close()
 
