@@ -1,5 +1,6 @@
 from nevek import *
 
+
 def registration(startNumber):
     for nevek in nevek:
         nameList = nevek.split(';')
@@ -8,4 +9,7 @@ def registration(startNumber):
     return False
 
 def searchBrand(results, márka):
-    for index,item 
+    for item in results:
+        if item.name == márka:
+            return item
+    return False

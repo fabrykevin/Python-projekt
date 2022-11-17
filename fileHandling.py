@@ -1,6 +1,6 @@
 from result import Result
 
-def loadDaata():
+def loadData():
     Sneakers = []
 
     file = open('Sneaker.csv', 'r', encoding='utf-8')
