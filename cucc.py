@@ -1,6 +1,7 @@
-from menu import*
-from main import*
-from fuggvenyek import*
+from menu import *
+from main import *
+from fuggvenyek import *
+from nevek import *
 
 sneaker = []
 
@@ -17,4 +18,14 @@ def showAll():
         print(sneaker, end = ' ')
     print()
 
+def smallest():
+    min = 9999999999
+    first = sneaker[1].split(';')
+    minSize = int(first[4])
+    minName = first[1]
+    for sneaker in sneaker:
+        sneakerData = sneaker.split(';')
+        if minSize > int(sneakerData[4]):
+            minSize = int(sneakerData[4])
+            minName = sneakerData[1]
 
