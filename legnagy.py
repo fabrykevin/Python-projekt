@@ -10,11 +10,3 @@ def legdrágább():
     for row in results:
         splitted=row.split(';')
     if splitted[8]
-
-
-        
-        
-        
-        
-        
-        
