@@ -1,6 +1,6 @@
 from regisztracio import signup, login
 from menu import*
-from fuggvenyek import showall, readFile, search, bejelentkezes
+from fuggvenyek import *
 Nevek=[]
 
 def regisztracio():
