@@ -7,6 +7,5 @@ def registration(startNumber):
             return nameList[6]
     return False
 
-def searchBrand(márka):
-    file = open('Sneaker.csv', 'r', encoding='utf-8')
-    splittedData = file
+def searchBrand(results, márka):
+    for index,item 
