@@ -1,5 +1,5 @@
 from nevek import *
-
+from Sneaker import *
 
 def registration(startNumber):
     for nevek in nevek:
