@@ -13,3 +13,13 @@ def searchBrand(results, márka):
         if item.name == márka:
             return item
     return False
+
+
+
+data=[]
+def readFile():
+    file = open('sneaker.csv', 'r', encoding='utf-8')
+    for row in file:
+        data.append(row.strip())
+    
+    file.close
