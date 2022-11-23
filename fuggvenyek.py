@@ -1,4 +1,4 @@
-from nevek import *
+
 
 def registration(startNumber):
     for nevek in nevek:
