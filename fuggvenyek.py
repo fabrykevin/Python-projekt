@@ -25,9 +25,10 @@ def readFile():
 
 def searchSizeByType():
     file = open('sneaker.csv', 'r', encoding='utf-8')
-    x = input("Add meg a cipő nevét: ")
-    for x in file:
-        print(x.Size)
-        
-    
-        
+    file.readline()
+    Brand = input("Adja meg a cipő márkáját: ")
+    Type = input("Add meg a cipő típusát: ")
+    for row in file:
+        splitted = row.split(';')
+        if splitted[1] == Brand and splitted[2] == Type:
+            print(f'{splitted[4]}')
