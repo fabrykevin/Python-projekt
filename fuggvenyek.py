@@ -1,4 +1,4 @@
-
+from fileHandling import *
 
 def registration(startNumber):
     for nevek in nevek:
@@ -22,3 +22,12 @@ def readFile():
         data.append(row.strip())
     
     file.close
+
+def searchSizeByType():
+    file = open('sneaker.csv', 'r', encoding='utf-8')
+    x = input("Add meg a cipő nevét: ")
+    for x in file:
+        print(x.Size)
+        
+    
+        
