@@ -14,6 +14,7 @@ while choice != 0:
        # elif choice=3
 
         elif choice==4:
+            
             legdrágábbcipo(),  legolcsobbcipo()
            
 

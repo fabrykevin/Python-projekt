@@ -34,6 +34,7 @@ def signup():
 
 def legdrágábbcipo():
     file=open('Sneaker.csv', 'r', encoding='utf-8')
+    file.readline()
     legnagyobb=0
     for row in file:
         splitted=row.split(';')
@@ -45,6 +46,7 @@ def legdrágábbcipo():
 
 def legolcsobbcipo():
     file=open('Sneaker.csv', 'r' , encoding='utf-8')
+    file.readline()
     legkisebb=9999999
     for row in file:
         splitted=row.split(';')
@@ -57,6 +59,7 @@ def legolcsobbcipo():
 
 def legujabbcipo():
     file=open('Sneaker.csv', 'r', encoding='utf-8')
+    file.readline()
     legnagyobb=0
     for row in file:
         splitted=row.split(';')
@@ -69,6 +72,7 @@ def legujabbcipo():
 
 def legregebbi():
     file=open('Sneaker.csv', 'r' , encoding='utf-8')
+    file.readline()
     legkisebb=9999999
     for row in file:
         splitted=row.split(';')
@@ -76,3 +80,7 @@ def legregebbi():
             legkisebb=int(splitted[7])
     file.close
     return legkisebb[ 2 , 7 ]
+
+
+
+ 
