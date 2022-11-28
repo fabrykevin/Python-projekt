@@ -20,7 +20,7 @@ def readFile():
     file = open('sneaker.csv', 'r', encoding='utf-8')
     for row in file:
         data.append(row.strip())
-    
+        print(data)
     file.close
 
 def searchSizeByType():

@@ -10,7 +10,7 @@ while choice != 0:
         if choice == 1:
             signup(), login()
         elif choice==2:
-            print(data)
+            readFile()
        # elif choice=3
 
         elif choice==4:
