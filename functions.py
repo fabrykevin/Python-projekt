@@ -22,7 +22,7 @@ def login():
 def signup():
     file=open('nevek.csv', 'a', encoding='utf-8')
     username=input('új Felhasználónév:')
-    password=input('új jeslzó:')
+    password=input('új jelszó:')
     term=input('szerződés y/n')
     if term=='y':
         print('regisztráció sikeres')
