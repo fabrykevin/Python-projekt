@@ -16,18 +16,16 @@ def login():
         if (user in us) and (pwd in pw):
             print('Sikeres')
             return True
-        print('Valami hibás')
-        return False
 
 def signup():
     file=open('nevek.csv', 'a', encoding='utf-8')
     username=input('új Felhasználónév:')
     password=input('új jelszó:')
-    term=input('szerződés y/n')
-    if term=='y':
+    term=input('szerződés elfogadás/elutasítás')
+    if term=='elfogadás':
         print('regisztráció sikeres')
-        file.write(f'{username}; {password}')
-    elif term=='n':
+        file.write(f'{username}; {password} \n')
+    elif term=='elutasítás':
         print('sikertelen regisztráció')
     else:
         print('Nincs ilyen opció')
