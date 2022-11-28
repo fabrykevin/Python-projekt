@@ -21,7 +21,7 @@ def signup():
     file=open('nevek.csv', 'a', encoding='utf-8')
     username=input('új Felhasználónév:')
     password=input('új jelszó:')
-    term=input('szerződés elfogadás/elutasítás')
+    term=input('szerződés elfogadás/elutasítás: ')
     if term=='elfogadás':
         print('regisztráció sikeres')
         file.write(f'{username}; {password} \n')
