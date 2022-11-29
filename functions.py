@@ -1,13 +1,17 @@
 from result import Result
+from fileHandling import *
 data=[]
 def readFile():
-    file = open('F:\iskola\python projekt\Python-projekt\Sneaker.csv', 'r', encoding='utf-8')
+    file = open('Sneaker.csv', 'r', encoding='utf-8')
     for row in file:
         data.append(row.strip())
     
     file.close
 
-
+def showall():
+    print('Összes cipő')
+    for row in data:
+        print(row, end=' ')
 def login():
     user=input('Felhasználónév:')
     pwd=input('Jelszó:')
@@ -71,7 +75,7 @@ def legujabbcipo():
 def legregebbi():
     file=open('Sneaker.csv', 'r' , encoding='utf-8')
     file.readline()
-    legkisebb=9999999
+    legkisebb=9999
     for row in file:
         splitted=row.split(';')
         if int(splitted[7])> legkisebb:

@@ -14,10 +14,16 @@ def searchBrand(results, márka):
     return False
 
 
-
+data=[]
+def readFile():
+    file = open('Sneaker.csv', 'r', encoding='utf-8')
+    for row in file:
+        data.append(row.strip().split(";"))
+    print(* data, sep = "\n")
+    file.close
 
 def searchSizeByType():
-    file = open('sneaker.csv', 'r', encoding='utf-8')
+    file = open('Sneaker.csv', 'r', encoding='utf-8')
     file.readline()
     Brand = input("Adja meg a cipő márkáját: ").upper()
     Type = input("Add meg a cipő típusát: ").upper()
