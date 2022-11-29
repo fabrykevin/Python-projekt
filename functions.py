@@ -1,6 +1,7 @@
+from result import Result
 data=[]
 def readFile():
-    file = open('sneaker.csv', 'r', encoding='utf-8')
+    file = open('F:\iskola\python projekt\Python-projekt\Sneaker.csv', 'r', encoding='utf-8')
     for row in file:
         data.append(row.strip())
     
