@@ -15,13 +15,6 @@ def searchBrand(results, márka):
 
 
 
-data=[]
-def readFile():
-    file = open('sneaker.csv', 'r', encoding='utf-8')
-    for row in file:
-        data.append(row.strip().split(";"))
-    print(* data, sep = "\n")
-    file.close
 
 def searchSizeByType():
     file = open('sneaker.csv', 'r', encoding='utf-8')
