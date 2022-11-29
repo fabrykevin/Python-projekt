@@ -19,8 +19,8 @@ data=[]
 def readFile():
     file = open('sneaker.csv', 'r', encoding='utf-8')
     for row in file:
-        data.append(row.strip())
-        print(data)
+        data.append(row.strip().split(";"))
+    print(* data, sep = "\n")
     file.close
 
 def searchSizeByType():
