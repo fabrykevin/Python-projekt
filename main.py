@@ -22,7 +22,7 @@ while choice != 0:
             érték = searchSizeByType(Brand,Type)
             if érték[0] == True:
                 print(f"{érték[1]}")
-
+                méret = searchSize()
             Colour = input("Kérem a színt:").upper()
             ertek = szin(Colour)
             print(ertek)
