@@ -1,6 +1,5 @@
 from menu import *
 from functions import *
-from fuggvenyek import *
 import os
 from fileHandling import *
 current_directory = os.getcwd()
@@ -17,15 +16,26 @@ while choice != 0:
             readFile()
             #print(current_directory)
         elif choice == 3:
-            searchSizeByType()
+            Brand = input("Adja meg a cipő márkáját: ").upper()
+            Type = input("Add meg a cipő típusát: ").upper()
+            érték = searchSizeByType(Brand,Type)
+            if érték[0] == True:
+                print(f"{érték[1]}")
+
+            Colour = input("Kérem a színt:").upper()
+            ertek = szin(Colour)
+            print(ertek)
+
+            
 
         elif choice==4:
-            
-            legdrágábbcipo(),  legolcsobbcipo()
+            legdrágábbcipo()
+            legolcsobbcipo()
            
 
         elif choice==5:
-            legujabbcipo() ,  legregebbi()
+            legujabbcipo()
+            legregebbi()
         
 
             
