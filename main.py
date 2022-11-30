@@ -26,17 +26,16 @@ while choice != 0:
             Colour = input("Kérem a színt:").upper()
             ertek = szin(Colour)
             print(ertek)
-
             
 
         elif choice==4:
             legdrágábbcipo()
             legolcsobbcipo()
-           
-
+    
         elif choice==5:
             legujabbcipo()
             legregebbi()
+            color()
         
 
             

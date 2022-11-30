@@ -13,6 +13,7 @@ def showall():
     for row in data:
         print(row, end=' ')
 def login():
+    print('Bejelentkezés')
     user=input('Felhasználónév:')
     pwd=input('Jelszó:')
     f=open('nevek.csv', 'r'  )
@@ -24,6 +25,7 @@ def login():
 
 def signup():
     file=open('nevek.csv', 'a', encoding='utf-8')
+    print('Regisztráció')
     username=input('új Felhasználónév:')
     password=input('új jelszó:')
     term=input(' elfogadás/elutasítás: ')
@@ -40,13 +42,16 @@ def legdrágábbcipo():
     file.readline()
     legnagyobb=0
     nev =""
+    neve=""
+   
     for row in file:
         splitted=row.split(';')
         
         if int(splitted[6])> legnagyobb:
             legnagyobb=int(splitted[6])
             nev = splitted[2]
-    print(f"A legdrágább cipő {nev};{legnagyobb} dollár") 
+            neve=splitted[1]
+    print(f"A legdrágább cipő neve {neve} {nev} és az ára {legnagyobb} dollár") 
     file.close()
 
 def legolcsobbcipo():
@@ -54,13 +59,15 @@ def legolcsobbcipo():
     file.readline()
     legkisebb=9999999
     nev = ""
+    neve=""
     for row in file:
         splitted=row.split(';')
         if int(splitted[6])< legkisebb:
             legkisebb=int(splitted[6])
             nev = splitted[2]
+            neve=splitted[1]
     file.close()
-    print(f"A legolcsobb cipő {nev};{legkisebb} dollár")
+    print(f"A legolcsobb cipő neve {neve} {nev} és az ára {legkisebb} dollár")
 
 
 
@@ -69,13 +76,16 @@ def legujabbcipo():
     file.readline()
     legnagyobb=0
     nev=''
+    neve=""
     for row in file:
         splitted=row.strip().split(';')
         if int(splitted[7])> legnagyobb:
             legnagyobb=int(splitted[7])
             nev=splitted[2]
+            neve=splitted[1]
+            
     file.close()
-    print(f"A legújabb cipő {nev};{legnagyobb}")
+    print(f"A legújabb cipő neve {neve} {nev} és a megjelenési dátuma {legnagyobb}")
     
 
 
@@ -85,13 +95,15 @@ def legregebbi():
     file.readline()
     legkisebb=9999
     nev=''
+    neve=""
     for row in file:
         splitted=row.strip().split(';')
         if int(splitted[7])< legkisebb:
             legkisebb=int(splitted[7])
             nev=splitted[2]
+            neve=splitted[1]
     file.close()
-    print(f"A legrégibb cipő {nev};{legkisebb} ")
+    print(f"A legrégibb cipő neve {neve} {nev} és a megjelenési dátuma {legkisebb} ")
 
 
 #def brandSearch():
