@@ -3,11 +3,12 @@ from functions import *
 import os
 from fileHandling import *
 current_directory = os.getcwd()
-print('}----------Üdvözöljük----------{')
-print('}----A Sneaker Simulátorban----{')
-readFile()
+print('----------Üdvözöljük----------')
+print('----A Sneaker Simulátorban----')
 choice=-1
 while choice != 0:
+        if choice == 0:
+            print("------Várjuk vissza!------")
         choice=menu()
         if choice == 1:
             signup(), login()

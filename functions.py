@@ -118,4 +118,11 @@ def searchSizeByType(Brand,Type):
             return splitted[4]
     return False
 
+def searchSize():
+    file = open('Sneaker.csv', 'r', encoding='utf-8')
+    for row in file:
+        splitted = row.strip().split('.')
+    return splitted
+
+
 
