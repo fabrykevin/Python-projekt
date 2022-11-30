@@ -35,7 +35,7 @@ while choice != 0:
         elif choice==5:
             legujabbcipo()
             legregebbi()
-            color()
+            
         
 
             
