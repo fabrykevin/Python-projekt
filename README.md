@@ -3,7 +3,7 @@
 - Megmutatja a teljes kínálatot 
 - A menüben választható Márka, Típus, Méret, Ár, Kiadás, Nem szerint a cipő.
 - A cipőkre tudunk ár, valamint Kiadás szerint szűrni(Megkereshetjük a legdrágább és a legolcsóbb cipőket)(Legújabb és Legrébbi cipőket)  
-- Csak írja be a keresni kívánt cipő márkát és lábméretét és a szimulátor megmutatja a kínálatot(A program bekér a usertől egy márkát pl:nike és bekéri lábméretet majd megmutatja a - választási lehetőségeket. 
+- Csak írja be a keresni kívánt cipő márkát és típusát és a szimulátor megmutatja a kínálatot(A program bekér a usertől egy márkát pl:nike és bekéri a típust és a színt megmutatja a méreteket)
 - Megmutatja hogy a kívánt lábbeli női vagy férfi fazonú-e (A bekért típus alapjpán megállapítja a nemet)  
 - Ha van a kívánt méretben cipő akkor megmutatja, hogy hány darab van belőle, vagy azt írja, hogy elfogyott( Végig megy a készleten majd megszámolja hogy az összeset.)(Bekéri a felhasználótól a márkát a típust majd megszámolja hogy az egyes fajtákból hány darab van.)
 - Szín alapján is kereshető a kívánt cípő(Ha a user szín alapján szeretné megkeresni a cipőt akkor a program bekéri a felhasználótól a színt majd azokra szűr) 
